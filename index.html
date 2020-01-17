@@ -12,30 +12,60 @@ alink="#97d5e011:46 2020-01-17"
 <a href="https://www.youtube.com/?gl=KR&hl=ko">유튜브잉</a><br><br>11:45 2020-01-17
 
 
-<!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Web Font</title>
-<style>
-@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-
-h1{
-     font-family: 'Nanum Pen Script', cursive;
-}
-</style>
+  <title>나눔스퀘어라운드 웹폰트</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nanumsquareround.css" rel="stylesheet">
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body{
+      background-color:#F9FAFC;
+      font:16px/1.6em 'NanumSquareRound', sans-serif;
+      color:#212528;
+    }
+    .outer {
+      width:100%;
+      height:100%;
+      display: table;
+    }
+    .inner {
+      display: table-cell;
+      vertical-align: middle;
+      text-align:center
+    }
+    .centered {
+      position: relative;
+      display: inline-block;
+     
+      width: 50%;
+      padding: 1em;
+      background: #17a2b8;
+      color: white;
+    }
+    p {text-align:center}
+    p strong.extraB {font-weight: 800}
+    p.light {font-weight: 300}
+  </style>
 </head>
+
 <body>
-     <h1> 안녕하세요. Code.D 입니다. </h1>
+  <div class=outer>
+    <div class=inner>
+      <div class=centered>
+      <p>이 폰트 테스트는 <a href="http://hangeul.naver.com/2017/nanum">네이버 나눔글꼴</a> 중 나눔스퀘어라운드 테스트입니다.</p>
+      <br />
+      <p>어제를 배우고, 오늘을 살며 , 내일을 꿈구어라</p>
+      <p><strong>어제를 배우고, 오늘을 살며 , 내일을 꿈구어라</strong></p>
+      <p><strong class="extraB">어제를 배우고, 오늘을 살며 , 내일을 꿈구어라</strong></p>
+      <p class="light">어제를 배우고, 오늘을 살며 , 내일을 꿈구어라</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
-@font-face{
-font-family: 'NanumSquareRoundB.eot';
-font-style: normal;
-src: url'NanumSquareRoundB.eot';
-src: url'NanumSquareRoundB.ttf');
-src: url'NanumSquareRoundB.woff';
-
-html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'SeoulNamsanM' !important;}
-<head><link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css"></head>
